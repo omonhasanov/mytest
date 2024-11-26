@@ -1,0 +1,63 @@
+body {
+  #loader {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    .img-5 {
+      margin-left: 30%;
+    }
+  }
+  .animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+  }
+  @keyframes animatebottom {
+    from {
+      bottom: -100px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  #img {
+    display: none;
+  }
+}
+.omon{
+  object-fit: cover;
+  background-color: #73AD21;
+  animation: zoom 2s infinite;
+  width: 200px!important;
+  height: 200px!important;
+  position: absolute;
+  border-radius: 50% !important;
+  bottom: -1px;
+}
+.omon1{
+  background-color: #73AD21;
+  width: 200px!important;
+  height: 200px!important;
+  left: 1030px;
+  bottom: 450px;
+  position: relative;
+  border-radius: 50% !important;
+}
+
+
+
+
+
+
+@keyframes zoom{
+  0% {
+    transform: scale(0);
+    opacity: 0.4;
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: 0.4;
+  }
+}
